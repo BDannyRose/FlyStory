@@ -8,7 +8,7 @@ public class Generation : MonoBehaviour
     [SerializeField] private GameObject[] blocks;
     [SerializeField] private GameObject floor;
 
-    private readonly Transform _generationChecker;
+    [SerializeField] private Transform _generationChecker;
     private GameObject _lastFloor;
     private Vector2 _newPosition;
     #endregion
