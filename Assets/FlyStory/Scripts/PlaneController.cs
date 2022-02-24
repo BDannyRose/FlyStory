@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlaneController : MonoBehaviour
 {
     #region Fields
-    [SerializeField] private float maxSpeedX = 50f;
-    [SerializeField] private float maxSpeedY = 10f;
-
+    
+    [SerializeField] private float maxSpeed = 50f;
+    [SerializeField] private float speed;
     private bool _holdMouse = false;
     private Rigidbody2D _rb;
     #endregion
@@ -15,11 +15,20 @@ public class PlaneController : MonoBehaviour
     #region Lifecycle
     private void Awake()
     {
+        speed = maxSpeed / 2;
         _rb = GetComponent<Rigidbody2D>();
     }
     
     void Update()
     {
+        if (speed <= maxSpeed)
+        {
+            speed += 1 * Time.deltaTime;
+        }
+        else
+        {
+            speed -= 2 * Time.deltaTime;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             _holdMouse = true;
@@ -32,36 +41,15 @@ public class PlaneController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_rb.velocity.x < maxSpeedX)
+        if (_holdMouse)
         {
-            _rb.AddForce(new Vector2(15, 2), ForceMode2D.Force);
-        }
-
-        if (_holdMouse && transform.position.y < 100)
-        {
-            if (_rb.velocity.y < maxSpeedY)
-            {
-                _rb.AddForce(new Vector2(5, 25), ForceMode2D.Force);
-            }
-            if (_rb.rotation < 30)
-            {
-                _rb.MoveRotation(_rb.rotation + 0.5f);
-            }
-            else if (_rb.rotation > 40)
-            {
-                _rb.MoveRotation(_rb.rotation - 0.5f);
-            }
+            _rb.velocity = (Vector2)transform.right * speed * 1.5f;
+            _rb.rotation += _rb.velocity.magnitude * Time.deltaTime * Mathf.Sin((50 - _rb.rotation) * Mathf.PI / 180);
         }
         else
         {
-            if (_rb.rotation > -30)
-            {
-                _rb.MoveRotation(_rb.rotation - 0.4f);
-            }
-            else if (_rb.rotation < -40)
-            {
-                _rb.MoveRotation(_rb.rotation + 0.4f);
-            }
+            _rb.velocity = (Vector2)transform.right * speed;
+            _rb.rotation -= _rb.velocity.magnitude * Time.deltaTime * Mathf.Cos((50 - _rb.rotation) * Mathf.PI / 180);
         }
     }
     #endregion

@@ -334,8 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84e355988570f84bb86fbe13074e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedX: 25
-  maxSpeedY: 15
+  maxSpeed: 50
+  speed: 0
 --- !u!4 &259099362 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 656359320200736435, guid: 25935d0b40f8c8447866e07094dedbdd, type: 3}
@@ -355,7 +355,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.89
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
@@ -951,12 +951,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
