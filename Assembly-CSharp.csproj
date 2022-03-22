@@ -57,11 +57,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FlyStory\Scripts\PlaneController.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\MenuController.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\BonusID.cs" />
     <Compile Include="Assets\FlyStory\Scripts\BlockController.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\GameController.cs" />
     <Compile Include="Assets\FlyStory\Scripts\Generation.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\Bonuses.cs" />
     <Compile Include="Assets\FlyStory\Scripts\Score.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\Upgrades.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\DeathScreen.cs" />
     <Compile Include="Assets\FlyStory\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\FuelBar.cs" />
     <Compile Include="Assets\FlyStory\Scripts\Deletion.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\FlyStory\Scripts\MovementModeButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

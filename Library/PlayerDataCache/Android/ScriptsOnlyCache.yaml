@@ -2,11 +2,21 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BlockController
+    - BonusID
+    - Bonuses
+    - DeathScreen
     - Deletion
+    - FuelBar
+    - GameController
     - Generation
+    - HealthBar
+    - MainMenu
+    - MenuController
+    - MovementModeButton
     - PlaneController
     - Score
     - ScoreManager
+    - Upgrades
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineFramingTransposer
@@ -36,11 +46,15 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/FlyStory/Scenes/SampleScene.unity:
+    Assets/FlyStory/Scenes/Gameplay.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -62,35 +76,55 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1490}
+    - Class: 114
+      Script: {instanceID: 1686}
+    - Class: 114
       Script: {instanceID: 1888}
     - Class: 114
       Script: {instanceID: 2128}
     - Class: 114
-      Script: {instanceID: 2474}
+      Script: {instanceID: 2476}
     - Class: 114
-      Script: {instanceID: 2524}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 2588}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2592}
     - Class: 114
-      Script: {instanceID: 2692}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 4414}
+      Script: {instanceID: 3312}
+    - Class: 114
+      Script: {instanceID: 3448}
+    - Class: 114
+      Script: {instanceID: 3600}
+    - Class: 114
+      Script: {instanceID: 3706}
+    - Class: 114
+      Script: {instanceID: 3954}
+    - Class: 114
+      Script: {instanceID: 4298}
+    - Class: 114
+      Script: {instanceID: 4428}
+    - Class: 114
+      Script: {instanceID: 4436}
+    - Class: 114
+      Script: {instanceID: 4834}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -100,6 +134,63 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/FlyStory/Scenes/StartMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1490}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2302}
+    - Class: 114
+      Script: {instanceID: 2526}
+    - Class: 114
+      Script: {instanceID: 2674}
+    - Class: 114
+      Script: {instanceID: 2698}
+    - Class: 114
+      Script: {instanceID: 2882}
+    - Class: 114
+      Script: {instanceID: 2932}
+    - Class: 114
+      Script: {instanceID: 3106}
+    - Class: 114
+      Script: {instanceID: 3218}
+    - Class: 114
+      Script: {instanceID: 3888}
+    - Class: 114
+      Script: {instanceID: 38318}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -232,7 +323,7 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
-      Hash: 192f9ab83fa5adfcfbfd5624f18c3122
+      Hash: 5e16520c323f7d48f756c9c4c179c1bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaneController
@@ -292,6 +383,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 1f139cabd8e307e2b6f1aad0c9906759
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine.PostFX
@@ -340,6 +437,12 @@ ScriptsOnlyBuild:
     className: CinemachineSameAsFollowTarget
   - hash:
       serializedVersion: 2
+      Hash: 2cf47d6fc26a8d04347588002d2ce4e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BonusID
+  - hash:
+      serializedVersion: 2
       Hash: d8ea00a95b5f4e01e8aa806af13e24b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -362,6 +465,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameController
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -394,7 +503,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 175e2e4a27d37b913b4d3da325a141af
+      Hash: f0b548a729ae08636c355c2e96e6aa84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Generation
@@ -538,6 +647,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: 37190c4dc8a26c512703cfede016b6ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bonuses
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -584,6 +699,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 52c555ec2ea9a8ea90349f81b181c525
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Upgrades
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -658,6 +779,12 @@ ScriptsOnlyBuild:
     className: CinemachineTransposer
   - hash:
       serializedVersion: 2
+      Hash: 92ee2df3695c6816c1496116c8ba9eb0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -674,6 +801,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineShot
+  - hash:
+      serializedVersion: 2
+      Hash: e08e76dc5a7134c14f0045e9bc8cf438
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathScreen
   - hash:
       serializedVersion: 2
       Hash: 87cef3c82381dc586f6772c3e27561b6
@@ -808,6 +941,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 1028c39545bcfa841aaab54121e69a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FuelBar
+  - hash:
+      serializedVersion: 2
       Hash: f20d526829fd892dd6269fcebb4ce074
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -872,6 +1011,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1028c39545bcfa841aaab54121e69a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthBar
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -950,7 +1095,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 669cc5151eff3d50430e7d6b0beee3f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovementModeButton
   platform: 13
   scenePathNames:
-  - Assets/FlyStory/Scenes/SampleScene.unity
+  - Assets/FlyStory/Scenes/StartMenu.unity
+  - Assets/FlyStory/Scenes/Gameplay.unity
   playerPath: D:/Stuff/Unity/Projects/FlyStory/FlyStory.apk

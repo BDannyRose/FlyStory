@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2170255778213561963}
   m_Layer: 6
   m_Name: BlockVertical8
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,14 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb16db78226a3a46b464d5da45aa491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
-  range: 0
-  rotationSpeed: 1
   generationPoints: []
-  numOfPoints: 0
-  scoreObject: {fileID: 5690809076525023699, guid: 681683fa3c205fc41a53a44956bf021b, type: 3}
   minRange: 10
   maxRange: 20
+  numOfPoints: 0
+  scoreObject: {fileID: 5690809076525023699, guid: 681683fa3c205fc41a53a44956bf021b, type: 3}
+  rotationSpeed: 1
+  speed: 0.2
 --- !u!50 &2170255778213561963
 Rigidbody2D:
   serializedVersion: 4

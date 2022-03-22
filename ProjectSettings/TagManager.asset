@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - DeletionPoint
-  - Score
+  - Floor
+  - Block
+  - Bonus
   layers:
   - Default
   - TransparentFX

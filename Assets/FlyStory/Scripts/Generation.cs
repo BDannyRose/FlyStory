@@ -6,6 +6,7 @@ public class Generation : MonoBehaviour
 {
     #region Fields
     [SerializeField] private GameObject[] blocks;
+    [SerializeField] private GameObject[] bonuses;
     [SerializeField] private GameObject floor;
 
     [SerializeField] private Transform _generationChecker;
@@ -22,13 +23,13 @@ public class Generation : MonoBehaviour
             _newPosition.y = transform.position.y;
             _newPosition.x = transform.position.x + 100f;
             transform.position = _newPosition;
-            GenerateBlocks(_lastFloor.transform);
+            GenerateBlocksAndBonuses(_lastFloor.transform);
         }
     }
     #endregion
 
     #region Private Methods
-    void GenerateBlocks(Transform parentFloor)
+    void GenerateBlocksAndBonuses(Transform parentFloor)
     {
         float floorPosX = parentFloor.position.x;
         Vector3 blockPosition;
@@ -39,7 +40,14 @@ public class Generation : MonoBehaviour
             while (vertical < 100)
             {
                 blockPosition = new Vector3(floorPosX + vertical + Random.Range(-15, 15), horizontal + Random.Range(-10, 17));
-                Instantiate(blocks[Random.Range(0, blocks.Length)], blockPosition, Quaternion.identity, parentFloor);
+                if (Random.Range(0, 2) == 0)
+                {
+                    Instantiate(blocks[Random.Range(0, blocks.Length)], blockPosition, Quaternion.identity, parentFloor);
+                }
+                else
+                {
+                    Instantiate(bonuses[Random.Range(0, bonuses.Length)], blockPosition, Quaternion.identity, parentFloor);
+                }
                 vertical += Random.Range(40, 50);
             }
             vertical = 10;
