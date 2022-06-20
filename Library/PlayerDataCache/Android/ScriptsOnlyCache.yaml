@@ -1,18 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BackgroundScroller
     - BlockController
     - BonusID
     - Bonuses
+    - ButtonColorChange
+    - ColorPicker
+    - CurrentColor
     - DeathScreen
     - Deletion
+    - DrawingSystem
+    - DrawingVisuals
+    - EnemyController
+    - EnemyStats
     - FuelBar
     - GameController
     - Generation
     - HealthBar
+    - HighscoreTable
     - MainMenu
     - MenuController
-    - MovementModeButton
     - PlaneController
     - Score
     - ScoreManager
@@ -26,13 +34,10 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -51,10 +56,11 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/FlyStory/Scenes/Gameplay.unity:
+    Assets/FlyStory/DrawingScene/Drawing.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -63,68 +69,159 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1490}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1686}
+      Script: {instanceID: 2156}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2128}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2526}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 3044}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 4688}
     - Class: 114
-      Script: {instanceID: 2780}
+      Script: {instanceID: 5294}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/FlyStory/GameplayScene/Gameplay.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 102
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 1714}
     - Class: 114
-      Script: {instanceID: 3312}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 3448}
+      Script: {instanceID: 2156}
     - Class: 114
-      Script: {instanceID: 3600}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 3706}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 3954}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 4428}
+      Script: {instanceID: 2634}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 4834}
+      Script: {instanceID: 2726}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 2808}
+    - Class: 114
+      Script: {instanceID: 2810}
+    - Class: 114
+      Script: {instanceID: 2912}
+    - Class: 114
+      Script: {instanceID: 3140}
+    - Class: 114
+      Script: {instanceID: 3254}
+    - Class: 114
+      Script: {instanceID: 3350}
+    - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 114
+      Script: {instanceID: 3638}
+    - Class: 114
+      Script: {instanceID: 3744}
+    - Class: 114
+      Script: {instanceID: 3992}
+    - Class: 114
+      Script: {instanceID: 4178}
+    - Class: 114
+      Script: {instanceID: 4336}
+    - Class: 114
+      Script: {instanceID: 4468}
+    - Class: 114
+      Script: {instanceID: 4476}
+    - Class: 114
+      Script: {instanceID: 4878}
+    - Class: 114
+      Script: {instanceID: 4928}
+    - Class: 114
+      Script: {instanceID: 5264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,7 +240,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/FlyStory/Scenes/StartMenu.unity:
+    Assets/FlyStory/MainMenuScene/StartMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -161,29 +258,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1490}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 2128}
+      Script: {instanceID: 2156}
     - Class: 114
-      Script: {instanceID: 2302}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2526}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 2932}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3888}
-    - Class: 114
-      Script: {instanceID: 38318}
+      Script: {instanceID: 3926}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,6 +370,12 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighscoreTable
+  - hash:
+      serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -323,7 +424,7 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
-      Hash: 5e16520c323f7d48f756c9c4c179c1bf
+      Hash: 6853c68602c4faabc2553d2d78d8fa46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaneController
@@ -503,7 +604,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: f0b548a729ae08636c355c2e96e6aa84
+      Hash: 54781f2d1dd2a81f05bc7c96a4707542
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: 55dd7f94ff06e3f663eb1ca643318fc6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Generation
@@ -551,6 +658,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: f37763f88c2c077b9aa612c851783cba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorPicker
+  - hash:
+      serializedVersion: 2
       Hash: 9b2d72155209a515197b0788f9f11a91
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -573,6 +686,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f5bc066dee39ef83228ad74807339ffb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CurrentColor
   - hash:
       serializedVersion: 2
       Hash: 5e84370a36252d6aa37d6a7bd37710f7
@@ -671,7 +790,7 @@ ScriptsOnlyBuild:
     className: CinemachineSmoothPath
   - hash:
       serializedVersion: 2
-      Hash: 8d0294c69e886042d9cc5da47964d26e
+      Hash: 41c8f714aff8b90baeb73d70b70541ca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Score
@@ -701,7 +820,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 52c555ec2ea9a8ea90349f81b181c525
+      Hash: ee6fb003acede07b45f25a8cf189a3c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Upgrades
@@ -803,7 +922,7 @@ ScriptsOnlyBuild:
     className: CinemachineShot
   - hash:
       serializedVersion: 2
-      Hash: e08e76dc5a7134c14f0045e9bc8cf438
+      Hash: 84a447acda457c5c9df44aae7a210731
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeathScreen
@@ -881,7 +1000,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: fd603770689195d8c21e05ad28422d62
+      Hash: 9a87526c894d9fc2052bb3c97658fbd7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreManager
@@ -983,10 +1102,22 @@ ScriptsOnlyBuild:
     className: GroupWeightManipulator
   - hash:
       serializedVersion: 2
+      Hash: d3e82de138f4500fb1e77d97f5eda617
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawingSystem
+  - hash:
+      serializedVersion: 2
       Hash: 28cfb4bd305dd11c6326cc3ee7c14138
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
     className: SpriteLibraryAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonColorChange
   - hash:
       serializedVersion: 2
       Hash: 56df1fa7cea034df9863fe5a24200a32
@@ -1025,6 +1156,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: a602a7d3bf79df89bf740c61bb568981
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyStats
+  - hash:
+      serializedVersion: 2
       Hash: 32fce7b97c39bff4b4f6c0f53f7e6bf1
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1055,6 +1192,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: b8a025422a11c1de812bac762766499a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackgroundScroller
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1065,6 +1208,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineComposer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawingVisuals
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -1095,14 +1244,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 669cc5151eff3d50430e7d6b0beee3f1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MovementModeButton
   platform: 13
   scenePathNames:
-  - Assets/FlyStory/Scenes/StartMenu.unity
-  - Assets/FlyStory/Scenes/Gameplay.unity
+  - Assets/FlyStory/MainMenuScene/StartMenu.unity
+  - Assets/FlyStory/GameplayScene/Gameplay.unity
+  - Assets/FlyStory/DrawingScene/Drawing.unity
   playerPath: D:/Stuff/Unity/Projects/FlyStory/FlyStory.apk

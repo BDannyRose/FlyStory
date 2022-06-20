@@ -8,6 +8,8 @@ TagManager:
   - Floor
   - Block
   - Bonus
+  - EnemyStats
+  - Enemy
   layers:
   - Default
   - TransparentFX

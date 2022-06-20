@@ -119,8 +119,8 @@
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineStateDrivenCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineSameAsFollowTargetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Experimental\CinemachineNewFreeLookEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Timeline\CinemachineShotClipEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Experimental\CinemachineNewFreeLookEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.6.11\Editor\Timeline\CinemachineShotEditor.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/FlyStory/Scenes/StartMenu.unity
+    path: Assets/FlyStory/MainMenuScene/StartMenu.unity
     guid: 3e6795eb7821d444d81f96161d06226f
   - enabled: 1
-    path: Assets/FlyStory/Scenes/Gameplay.unity
+    path: Assets/FlyStory/GameplayScene/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/FlyStory/DrawingScene/Drawing.unity
+    guid: c0f2ccd1b65ec62459da0b83e16cc6da
   m_configObjects: {}
