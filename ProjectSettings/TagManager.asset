@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - DeletionPoint
-  - Score
+  - Floor
+  - Block
+  - Bonus
+  - EnemyStats
+  - Enemy
   layers:
   - Default
   - TransparentFX

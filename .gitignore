@@ -1,0 +1,13 @@
+Library/
+Logs/
+obj/
+Temp/
+.vs/
+.vsconfig
+/Library/ArtifactDB
+/Library/Artifacts/ce/ce9273b84f550131fc96713cf97fc5e2
+/Library/CurrentLayout-default.dwlt
+/Library/SceneVisibilityState.asset
+/Library/SourceAssetDB
+/Logs/AssetImportWorker0.log
+/Logs/shadercompiler-AssetImportWorker0.log
